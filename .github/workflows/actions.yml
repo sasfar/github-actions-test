@@ -10,7 +10,7 @@ jobs:
         id: Greeting
         uses: actions/hello-world-javascript-action@v1
         with:
-          who-to-greet: Asfar
+          who-to-greet: Asfar Shah
 
       - name: Log Greeting Time
         run: echo "${{ steps.Greeting.outputs.time }}"
