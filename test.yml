@@ -1,0 +1,10 @@
+name: AsfarFarooq
+age: 37
+address: "Oshawa: Ontario"
+active: true
+key:
+  key2: test
+  key3: 2022
+  key4:
+    key: nested_test
+    key2: value_again
