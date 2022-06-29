@@ -3,9 +3,6 @@ on:
   pull_request:
     types: [assigned, opened, closed, reopened]
 
-  #pull_request:
-  #  types: [closed, assigned, opened, reopened]
-
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
