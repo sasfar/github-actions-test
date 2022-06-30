@@ -2,7 +2,7 @@ name: Actions Workflow
 
 on:
   repository_dispatch:
-    types: [build]
+    types: [pakora]
 
   pull_request:
     types: [opened, closed, reopened]
