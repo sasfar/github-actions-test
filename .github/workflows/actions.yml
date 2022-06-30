@@ -2,7 +2,7 @@ name: Actions Workflow
 
 on:
   repository_dispatch:
-    types: [build]
+    types: [on-demand-test]
 
   pull_request:
     types: [opened, closed, reopened]
