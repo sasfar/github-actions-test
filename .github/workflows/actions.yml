@@ -1,11 +1,10 @@
 name: Actions Workflow
-
 on:
   repository_dispatch:
     types: [pakora]
 
-  pull_request:
-    types: [opened, closed, reopened]
+  # pull_request:
+  #   types: [opened, closed, reopened]
 
 jobs:
   run-github-actions:
