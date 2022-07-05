@@ -1,15 +1,37 @@
 name: Actions Workflow
 on:
-  pull_request:
-    types: [assigned, opened, synchronize, reopened]
+  push:
+    branches:
+      - master
+      - "feature/*" # anything that is a feature a or b
+      - "!asfar"
+#    tags:
+#      - "v1.*"
+#      tags-ignore:
+#        - "v2"
+#    paths:
+#      - **.js
 
-  #pull_request:
-  #  types: [closed, assigned, opened, reopened]
+#    paths-ignore:
+#      - "!filename.js"
+
+#  pull_request:
+#    branches:
+#      - master
+
+# repository_dispatch:
+#   types: [pakora]
+
+# pull_request:
+#   types: [opened, closed, reopened]
 
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Payload
+        run: echo ${{ github.event.client_payload.env }}
+
       - name: List Files
         run: |
           pwd
